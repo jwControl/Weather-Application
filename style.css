@@ -1,0 +1,544 @@
+*{
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight:bold;
+}
+.container-fluid{
+  position:absolute;
+  height:100vh;
+ margin:50px;
+}
+.container{
+  position:absolute;
+  margin:5vw;
+  width:360px;
+  height:630px;
+  border-radius:10%;
+   overflow: hidden;
+   margin-left: calc(50vw - 200px);
+ box-shadow: 0px 0px 50px 0px  #222;
+}
+#container{
+	width:360px;
+	margin-left: calc(50vw - 200px);
+}
+.well-1{
+  position:absolute; 
+  left:0;
+  
+  width:360px;
+  height:100px;
+  background-color: rgb(228,117,1);
+   border-top-left-radius: 10%;
+ border-top-right-radius: 10%;
+}
+
+
+.well-1 .fa-map-marker{
+position:absolute;
+top:25px;
+  left:20px;
+  font-size:35px;
+  color:white;
+}
+.well-2{
+  position:relative;
+  top:100px;
+  left:-15px;
+  width:360px;
+  height:150px;
+  background-color:rgb(89,216,99);
+}
+.hide{
+  display:none;
+}
+.well-2 p{
+     position:absolute;
+  bottom:0px;
+  left:30%;
+text-align:center;
+  color:white;
+   font-size:30px; 
+ 
+}
+.well-3{
+  position:relative;
+  top:100px;
+  left:-15px;
+  width:360px;
+  height:150px;
+  background-color:rgb(248,230,72);
+ 
+}
+.well-4{
+  position:relative;
+  top:100px;
+  left:-15px;
+  width:360px;
+  height:150px;
+  background-color:rgb(62,190,201);
+}
+.well-4 .fa-thermometer{
+  position:absolute;
+top:30px;
+left:20px;
+  font-size:35px;
+  color:white;
+}
+.well-4 p{
+    position:absolute;
+top:23px;
+ left:100px;
+  font-size:35px;
+  color:white;
+}
+.button{
+  position:absolute;
+  left:100px;
+  bottom:0;
+   background-color:rgb(62,190,201);
+    border: 2px solid white;
+  border-radius:10%;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
+  position:absolute;
+  left:160px;
+  bottom:0;
+   background-color:rgb(62,190,201);
+    border: 2px solid white;
+  border-radius:10%;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+ opacity:0.5;
+}
+  .button:active { 
+    background-color: yellow;
+} 
+.well-5{
+   position:relative;
+   top:100px;
+   left:-15px;
+  width:360px;
+  height:80px;
+  background-color:rgb(173,92,233);
+   border-bottom-left-radius: 10%;
+ border-bottom-right-radius: 10%;
+}
+.well-5 p{
+  text-align:center;
+padding:25px;
+  color:white;
+   font-size:15px; 
+}
+a{
+  color:blue;
+}
+.well-1 p{
+  position:absolute;
+  top:20px;
+left:70px;
+  font-size:35px;
+  color:white;
+}
+.image1{
+  position:absolute;
+  bottom:0;
+  left:10px;
+}
+.image2{
+  position:absolute;
+  top:0;
+  left:10px;
+}
+
+#humidity{
+    position:absolute;
+  bottom:5px;
+  left:80px;
+   color:rgb(30,136,229);
+   font-size:25px;
+
+}
+#cloudy{
+    position:absolute;
+  top:5px;
+  left:60px;
+  color:rgb(30,136,229);
+   font-size:25px;
+
+}
+#wind{
+    position:absolute;
+  top:10px;
+  left:80px;
+  color:rgb(30,136,229);
+   font-size: 25px;
+
+}
+.well-3 .fa-cloud{
+    font-size:30px;
+  
+}
+.fa-cloud{
+  position:absolute;
+top:60px;
+  left:20px;
+  color:rgb(30,136,229);
+  
+}
+.Clear{
+    position: relative;
+  top:15%;
+   width: 55px;
+  height: 55px;
+}
+.Clear:before{
+    content: '';
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: #fdf6c6;
+  border: 1px solid #faeb7c;
+  border-radius: 50%;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-iteration-count: infinite;
+}
+.Clear:after{
+    width: 40px;
+  height: 40px;
+  background: #faeb7c;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+  border: 2px solid #F5D76A;
+}
+.Clouds, .Rain, .Drizzle, .Snow, .Thunderstorm{
+    width: 30px;
+  height: 25px;
+ top:20%;
+  background: white;
+  position: absolute;
+  border: 1px solid #7ccafa;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+    animation-duration: 6s;
+  animation-name: moveRight;
+  animation-iteration-count: infinite;
+  
+}
+.Clouds:after, .Rain:after, .Drizzle:after, .Snow:after, .Thunderstorm:after{
+    content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-top: 1px solid #7ccafa;
+  border-left: 1px solid #7ccafa;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+}
+.Clouds:before, .Rain:before, .Drizzle:before, .Snow:before, .Thunderstorm:before {
+   content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-top: 1px solid #7ccafa;
+  border-right: 1px solid #7ccafa;
+  border-radius: 50%;
+  position: absolute;
+  right: -9px;
+  bottom: 0px; 
+}
+.Thunder1{
+  position: absolute;
+   left: 10px;
+  top: 25px;
+  background-color: yellow;
+  width: 7px;
+  height: 12px;
+   -webkit-transform: skew(-45deg);
+  -webkit-animation: flash 2s ease-out infinite;
+}
+.Thunder2{
+  position: absolute;
+   left: 10px;
+  top: 30px;
+  background-color: yellow;
+  width: 7px;
+  height: 15px;
+   -webkit-transform: skew(-45deg);
+  -webkit-animation: flash 2s ease-out infinite;
+}
+.Clouds-small{
+    width: 30px;
+  height: 25px;
+  top: 50%;
+  margin-top: -10px;
+  background: white;
+  position: absolute;
+  border: 1px solid #7ccafa;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: scale(0.5);
+  margin-top: -25px;
+  animation-duration: 6s;
+  animation-name: moveLeft;
+  animation-iteration-count: infinite;
+}
+.Clouds-small:before{
+    content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-top: 1px solid #7ccafa;
+  border-right: 1px solid #7ccafa;
+  border-radius: 50%;
+  position: absolute;
+  right: -9px;
+  bottom: 0px;
+}
+.Clouds-small:after{
+    content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-top: 1px solid #7ccafa;
+  border-left: 1px solid #7ccafa;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+}
+
+.Rain-cloud{
+  border: 0px;
+   background: linear-gradient(to bottom, #7F868D, #466D98);
+}
+.Rain-cloud:after{
+  border: 0px;
+   background: linear-gradient(to bottom, #7F868D, #466D98);
+}
+.Rain-cloud:before{
+  border: 0px;
+   background: linear-gradient(to bottom, #7F868D, #466D98);
+}
+.Snow-cloud{
+ background: linear-gradient(to bottom, #ECEFF2, #CBD0D6);
+}
+.Snow-cloud:after{
+ background: linear-gradient(to bottom, #ECEFF2, #CBD0D6);
+}
+.Snow-cloud:before{
+ background: linear-gradient(to bottom, #ECEFF2, #CBD0D6);
+}
+.Flakes{
+   position: absolute;
+  width: 1px;
+  height: 3px;
+  background: white;
+  top: 10px;
+}
+.Flakes:after{
+    content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  margin-top: 0px;
+  background: #7ccafa;
+  margin-left: -2px;
+}
+.Flake-1{
+   left: 5px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.Flake-2{
+   left: 15px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+}
+.Flake-3{
+   left: 25px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+.Drizzle-cloud{
+  border: 0px;
+  background-color:lightgrey;
+}
+.Drizzle-cloud:after{
+  border: 0px;
+  background-color:lightgrey;
+}
+.Drizzle-cloud:before{
+  border: 0px;
+  background-color:lightgrey;
+}
+.Droplets{
+    position: absolute;
+  height:1px;
+  width: 2px;
+    background: #689EDB;
+
+  top: 15px;
+  
+}
+.Droplet-1{
+  left: 5px;
+  height: 10px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-iteration-count: infinite;
+ 
+}
+.Droplet-2{
+     left: 15px;
+  height: 10px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+.Droplet-3{
+    left: 25px;
+  height: 10px;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-name: raining;
+  animation-iteration-count: infinite;
+}
+.Droplet-4{
+   left: 30px;
+  height: 10px;
+  animation-duration: 1s;
+  animation-name: raining;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveRight {
+  
+  0% {
+    left: 40%;
+  }
+  
+  50% {
+    left: 50%;
+  }
+  
+  100% {
+    left: 40%;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    left: -90%;
+  }
+  
+  50% {
+    left: 80%;
+  }
+  
+  100% {
+    left: -90%;
+  }
+}
+@keyframes raining {
+  0% {
+    top: 5px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-webkit-keyframes flash{
+  0%{
+    background: none;
+    
+  }
+ 
+  50%{
+    background: none;
+  }
+
+  75{
+    background: none;
+  }
+  80%{
+    background: yellow;
+  }
+  100%{
+    background: none;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width:400px){
+	
+  .container{
+  width:280px;
+  height:630px;
+    }
+  .well-1 .fa-map-marker{
+
+  font-size:25px;
+ 
+}
+.well-1 p{
+position:absolute;
+  top:20px;
+  left:50px;
+  font-size:25px;
+  color:white;
+}
+}
+@media all and (min-width:1200px){
+	.container{
+  max-width:360px;
+  height:630px;
+    }
+}
