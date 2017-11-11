@@ -37,7 +37,6 @@ function getInformation(lon,lat) {
   }  
       });
 }
-
 function getIcon(a){
    $('div.' + a).removeClass('hide');
 }
