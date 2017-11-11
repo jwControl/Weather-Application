@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <div class="container-fluid">
+ <center> <div class="title">
+    <h1>Weather Application</h1>  
+  </div>
+  <div class="container" id="container">
+  <div class="well-1">
+  
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+
+     <p id="city"></p>
+   
+  </div>
+    <div class="well-2 " >
+      <div class="Clouds hide">
+        <div class="Clouds-small">
+        </div>
+      </div>
+       <div class="Clear hide">
+      </div>
+       <div class="Rain Rain-cloud hide">
+         <div class="Droplets ">
+           <div class="Droplets Droplet-1">
+           </div>
+           <div class="Droplets Droplet-2">
+           </div>
+           <div class="Droplets Droplet-3">
+           </div>
+           <div class="Droplets Droplet-4">
+           </div>
+        </div>
+      </div>
+        <div class="Drizzle Drizzle-cloud hide">
+           <div class="Droplets ">
+        <div class="Droplets Droplet-1">
+           </div>
+           <div class="Droplets Droplet-3">
+           </div>
+          </div>
+      </div>
+      <div class="Snow Snow-cloud hide">
+        <div class="Flakes ">
+           <div class="Flakes Flake-1">
+           </div>
+          <div class="Flakes Flake-2">
+           </div>
+            <div class="Flakes Flake-3">
+           </div>
+          <div class="Flakes Flake-4">
+           </div>
+      </div>
+      </div>
+      <div class="Thunderstorm Rain-cloud hide">
+         <div class="Droplets ">
+           <div class="Droplets Droplet-1">
+           </div>
+           <div class="Droplets Droplet-2">
+           </div>
+           <div class="Droplets Droplet-3">
+           </div>
+           <div class="Droplets Droplet-4">
+           </div>
+        </div>
+        <div class="Thunder1">
+        </div>
+        <div class="Thunder2">
+        </div>
+      </div>
+      <p id="icon"><p>
+  </div>
+   <div class="well-3">
+    
+     <i class="fa fa-cloud"><span id="cloudy"></span></i>
+     <img class="image1" src="https://cdn.iconscout.com/public/images/icon/free/png-512/humidity-forecast-hydration-precipitation-temperature-weather-3a64e557720613a1-512x512.png" alt="Humidity" height="50" width="50">
+     <span id="humidity"></span>
+     <img class="image2" src="https://www.shareicon.net/download/2015/09/07/97241_wind_512x512.png" alt="wind" height="50" width="50"> <span id="wind"></span>
+      
+  </div>
+     <div class="well-4">
+         <i class="fa fa-thermometer"></i>
+        <p id="temp"></p>
+     <button class="button">°C</button>
+       <button class="button2" id="button2">°F</button>
+  </div>
+    <div class="well-5">
+      <p> Made by <em><a target="blank" href="https://codepen.io/Walczak/">Joanna Walczak</em></a>
+  </div>
+</center>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" ></script>
+<script src="script.js"></script>
+  </body>
+  </html>
