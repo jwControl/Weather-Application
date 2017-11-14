@@ -517,10 +517,10 @@ top:60px;
   }
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:700px){
 	
   .container{
-  width:280px;
+  width:300px;
   height:630px;
     }
   .well-1 .fa-map-marker{
